@@ -4,7 +4,7 @@
   "private": true,
   "description": "Responsive Portfolio website",
   "main": "app.js",
-  "homepage": "https://VimaleshCT.github.io/Personal_Portfolio",
+  "homepage": "http://VimaleshCT.github.io/Personal_Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
