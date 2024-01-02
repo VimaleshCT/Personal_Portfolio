@@ -1,4 +1,3 @@
-import logo from "../src/assets/img/pro2.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
