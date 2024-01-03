@@ -128,7 +128,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p></p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
