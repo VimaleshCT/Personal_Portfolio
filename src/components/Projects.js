@@ -13,6 +13,7 @@ import p10 from "../assets/img/project_9.jpeg";
 import p11 from "../assets/img/project_10.png";
 import p12 from "../assets/img/project_11.png";
 import p13 from "../assets/img/project_12.png";
+import p14 from "../assets/img/project_13.png";
 import c1 from "../assets/img/cert1.jpg";
 import c2 from "../assets/img/cert2.png";
 import c3 from "../assets/img/cert3.png";
@@ -75,6 +76,11 @@ export const Projects = () => {
       title: "Calci",
       description: "Calculator App (React)",
       imgUrl: p7,
+    },
+    {
+      title: " MovieLand",
+      description: "Landing page for a movie search website(React,HTML,CSS)",
+      imgUrl: p14,
     },
     {
       title: "Numeralogy",
