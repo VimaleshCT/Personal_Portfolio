@@ -20,6 +20,7 @@ import c3 from "../assets/img/cert3.png";
 import c4 from "../assets/img/cert4.png";
 import c5 from "../assets/img/cert5.png";
 import c6 from "../assets/img/cert6.png";
+import c7 from "../assets/img/cert7.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -128,6 +129,11 @@ export const Projects = () => {
       title: "The Complete JavaScript Course 2023: From Zero to Expert!",
       Issuedby: " UDEMY ",
       imgUrl: c6,
+    },
+    {
+      title: "Python And Flask Framework Complete Course For Beginners",
+      Issuedby: " UDEMY ",
+      imgUrl: c7,
     },
   ];
 
