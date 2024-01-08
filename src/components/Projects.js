@@ -21,6 +21,8 @@ import c4 from "../assets/img/cert4.png";
 import c5 from "../assets/img/cert5.png";
 import c6 from "../assets/img/cert6.png";
 import c7 from "../assets/img/cert7.png";
+import c8 from "../assets/img/cert8.png";
+import c9 from "../assets/img/cert9.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -134,6 +136,16 @@ export const Projects = () => {
       title: "Python And Flask Framework Complete Course For Beginners",
       Issuedby: " UDEMY ",
       imgUrl: c7,
+    },
+    {
+      title: "Java (Basic)",
+      Issuedby: " HackerRank ",
+      imgUrl: c8,
+    },
+    {
+      title: "Python (Basic)",
+      Issuedby: " HackerRank",
+      imgUrl: c9,
     },
   ];
 
