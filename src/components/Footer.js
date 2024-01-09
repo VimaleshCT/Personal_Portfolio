@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 // import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/pro2.png";
+import logo from "../assets/img/ct.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/git1.svg";
 import navIcon3 from "../assets/img/hac.svg";
+import navIcon4 from "../assets/img/lc.svg";
 
 export const Footer = () => {
   return (
@@ -26,6 +27,9 @@ export const Footer = () => {
               </a>
               <a href="https://www.hackerrank.com/profile/pranovvimal30">
                 <img src={navIcon3} alt="Icon" />
+              </a>
+              <a href="https://leetcode.com/Vimalesh26/">
+                <img src={navIcon4} alt="Icon" />
               </a>
             </div>
             <p>Copyright 2024. All Rights Reserved</p>

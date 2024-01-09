@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/pro2.png";
+import logo from "../assets/img/ct.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/git1.svg";
 import navIcon3 from "../assets/img/hac.svg";
+import navIcon4 from "../assets/img/lc.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -81,6 +82,9 @@ export const NavBar = () => {
                 </a>
                 <a href="https://www.hackerrank.com/profile/pranovvimal30">
                   <img src={navIcon3} alt="" />
+                </a>
+                <a href="https://leetcode.com/Vimalesh26/">
+                  <img src={navIcon4} alt="" />
                 </a>
               </div>
               <HashLink to="#connect">

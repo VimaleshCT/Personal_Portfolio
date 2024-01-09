@@ -77,10 +77,11 @@ export const Banner = () => {
                   <p>
                     {" "}
                     I'm Vimalesh C T an aspiring Front-end Web developer from
-                    Dindigul, India. I am a Web development enthusiast currently
-                    pursuing Bachelor's degree in Computer Science at College of
-                    Engineering, Guindy. I enjoy turning complex problems into
-                    simple, beautiful and intuitive designs.
+                    Dindigul, India. I am a Web development and Data Analyst
+                    enthusiast currently pursuing Bachelor's degree in Computer
+                    Science at College of Engineering, Guindy. I enjoy turning
+                    complex problems into simple, beautiful and intuitive
+                    designs.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
