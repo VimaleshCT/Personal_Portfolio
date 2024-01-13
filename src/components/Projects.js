@@ -86,8 +86,8 @@ export const Projects = () => {
       imgUrl: p14,
     },
     {
-      title: "Numeralogy",
-      description: "numeralogical Name prediction (Python)",
+      title: "Numerology",
+      description: "Numerological Name prediction (Python)",
       imgUrl: p10,
     },
     {
