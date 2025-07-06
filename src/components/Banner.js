@@ -93,13 +93,13 @@ export const Banner = () => {
                       <span>Let’s Connect <ArrowRightCircle size={25} /></span>
                     </button>
                   </a>
-                    <a
-                            className="btn btn-outline-light"
-                            href="/VimaleshCT_Resume.pdf"
-                            download
-                          >
-                            Download Resume
-                          </a>
+                <a
+                  className="btn btn-outline-light"
+                  href="./VimaleshCT_Resume.pdf"
+                  download
+                >
+                  Download Resume
+                </a>
 
                   </div>
                 </div>
