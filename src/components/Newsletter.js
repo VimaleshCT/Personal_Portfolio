@@ -1,46 +1,41 @@
-import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
 
-export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState('');
+const Newsletter = () => {
+  const form = useRef();
+  const [status, setStatus] = useState("");
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email
-    })
-  }
+    setStatus("Sending...");
 
-  const clearFields = () => {
-    setEmail('');
-  }
+    emailjs.sendForm(
+      'service_wnwk7b9',
+      'template_8vfogye',
+      form.current,
+      'IEJczqHsskcmwXBVK'
+    ).then((result) => {
+      console.log("Success:", result.text);
+      setStatus("Message sent ✅");
+      form.current.reset();
+    }).catch((error) => {
+      console.error("Failed:", error);
+      setStatus("Failed to send ❌. Please check your network or try again.");
+    });
+  };
 
   return (
-      <Col lg={12}>
-        <div className="newsletter-bx wow slideInUp">
-          <Row>
-            <Col lg={12} md={6} xl={5}>
-              <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
-              {status === 'sending' && <Alert>Sending...</Alert>}
-              {status === 'error' && <Alert variant="danger">{message}</Alert>}
-              {status === 'success' && <Alert variant="success">{message}</Alert>}
-            </Col>
-            <Col md={6} xl={7}>
-              <form onSubmit={handleSubmit}>
-                <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </Col>
-          </Row>
-        </div>
-      </Col>
-  )
-}
+    <div>
+      <form ref={form} onSubmit={sendEmail}>
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <input type="text" name="phone" placeholder="Your phone number" />
+        <textarea name="message" placeholder="Type your message" required />
+        <button type="submit">Send</button>
+      </form>
+      <p>{status}</p>
+    </div>
+  );
+};
+
+export default Newsletter;

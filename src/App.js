@@ -6,12 +6,14 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { WorkAndProjects } from "./components/WorkAndProjects"; // new import
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Banner />
+       <WorkAndProjects />
       <Skills />
       <Projects />
       <Contact />

@@ -51,6 +51,19 @@ export const NavBar = () => {
               >
                 Home
               </Nav.Link>
+
+              <Nav.Link
+                href="#experience"
+                className={
+                  activeLink === "experience"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("experience")}
+              >
+                Experience
+              </Nav.Link>
+
               <Nav.Link
                 href="#skills"
                 className={
@@ -60,6 +73,7 @@ export const NavBar = () => {
               >
                 Skills
               </Nav.Link>
+
               <Nav.Link
                 href="#projects"
                 className={
@@ -75,16 +89,16 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/vimalesh-c-t/">
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/VimaleshCT">
-                  <img src={navIcon2} alt="" />
+                  <img src={navIcon2} alt="GitHub" />
                 </a>
                 <a href="https://www.hackerrank.com/profile/pranovvimal30">
-                  <img src={navIcon3} alt="" />
+                  <img src={navIcon3} alt="HackerRank" />
                 </a>
                 <a href="https://leetcode.com/Vimalesh26/">
-                  <img src={navIcon4} alt="" />
+                  <img src={navIcon4} alt="LeetCode" />
                 </a>
               </div>
               <HashLink to="#connect">

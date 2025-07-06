@@ -76,16 +76,32 @@ export const Banner = () => {
                   </h1>
                   <p>
                     {" "}
-                    I'm Vimalesh C T an aspiring Front-end Web developer from
-                    Dindigul, India. I am a Web development and Data Analyst
-                    enthusiast currently pursuing Bachelor's degree in Computer
-                    Science at College of Engineering, Guindy. I enjoy turning
-                    complex problems into simple, beautiful and intuitive
-                    designs.
+                    I'm Vimalesh C T , Full Stack Developer and Data Analyst with hands-on experience in building
+ scalable web applications and extracting insights from data. Skilled in React,
+ Node.js, Django, and modern databases. Passionate about solving real-world
+ problems through clean code, team collaboration, and data-driven decisions.
+ Seeking a growth-focused role to contribute my skills in modern tech stacks and
+ full-cycle development
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                   <div className="d-flex gap-3">
+                  <a
+                    href="https://linktr.ee/VimaleshCT?utm_source=linktree_admin_share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="vvd">
+                      <span>Let’s Connect <ArrowRightCircle size={25} /></span>
+                    </button>
+                  </a>
+                    <a
+                            className="btn btn-outline-light"
+                            href="/VimaleshCT_Resume.pdf"
+                            download
+                          >
+                            Download Resume
+                          </a>
+
+                  </div>
                 </div>
               )}
             </TrackVisibility>
